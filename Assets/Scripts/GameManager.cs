@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         {
             if (delay <= 0)
             {
-                delay = 1f;
+                delay = .5f;
                 GameObject zombie = Instantiate(zombiePrefabs[Random.Range(0, zombiePrefabs.Length)], spawnPoint.position, Quaternion.identity);
                 GameObject vfx = Instantiate(vfxSpawn, spawnPoint.position, Quaternion.identity);
                 Destroy(vfx, 1f);
